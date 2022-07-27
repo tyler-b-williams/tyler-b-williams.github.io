@@ -1,11 +1,31 @@
     /* where i put my variables */
     
      :root {
+        /* data analytics */
         --pinkPrimary: #ff00e1;
         --pinkTertiary: #ffa3f4;
         --pinkSecondary: #ff6cda;
         --pinkLinGrad: linear-gradient(to right, var(--pinkPrimary) 0%, var(--pinkSecondary) 100%);
         --pinkTopLeftGrad: repeating-linear-gradient(to left top, var(--pinkTertiary), var(--pinkSecondary));
+        /* SQL */
+        --cyanPrimary: #00ffff;
+        --cyanTertiary: #00b2fe;
+        --cyanSecondary: #00ffb3;
+        --cyanLinGrad: linear-gradient(to right, var(--cyanPrimary) 0%, var(--cyanSecondary) 100%);
+        --cyanTopLeftGrad: repeating-linear-gradient(to left top, var(--cyanTertiary), var(--cyanSecondary));
+        /* software engineering */
+        --bluePrimary: #0d00ff;
+        --blueTertiary: #526fff;
+        /* --blueSecondary: #00b2fe; */
+        --blueSecondary: #000098;
+        --blueLinGrad: linear-gradient(to right, var(--bluePrimary) 0%, var(--blueSecondary) 100%);
+        --blueTopLeftGrad: repeating-linear-gradient(to left top, var(--blueTertiary), var(--blueSecondary));
+        /* Machine learning */
+        --violetPrimary: #302ea3;
+        --violetTertiary: #773cec;
+        --violetSecondary: #d900ff;
+        --violetLinGrad: linear-gradient(to right, var(--violetPrimary) 0%, var(--violetSecondary) 100%);
+        --violetTopLeftGrad: repeating-linear-gradient(to left top, var(--violetTertiary), var(--violetSecondary));
     }
     
     @Font-face {
@@ -28,6 +48,8 @@
         transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
         cursor: pointer;
         border: 6px inset #ffffff;
+        min-height: 225px;
+        ;
     }
     
     .card:hover {
@@ -36,7 +58,6 @@
         /* transform: rotateZ(-1deg); */
         box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
         border: 6px inset #ffffff;
-        /* opacity: 0.9; */
     }
     
     button {
@@ -47,6 +68,15 @@
     
     col {
         border: 0px;
+    }
+    
+    @keyframes gradCycle {
+        0% {
+            background-position: bottom right;
+        }
+        100% {
+            background-position: top left;
+        }
     }
     
     .data-analytics :is(h5,
@@ -63,7 +93,6 @@
     .card.data-analytics {
         border: 6px inset var(--pinkPrimary);
         background-color: var(--pinkTertiary);
-        /* opacity: 0.9; */
     }
     
     .card.data-analytics:hover {
@@ -73,11 +102,6 @@
         border: 6px inset var(--pinkPrimary);
         background-repeat: repeat-x;
         animation: gradCycle .75s ease-in infinite alternate;
-        /* box-shadow: inset 0 0 50px #fff, inset 20px 0 80px #f0f, inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff; */
-        /* height: 100%; */
-        /* background: repeating-linear-gradient(to left, var(--pinkPrimary) 0%, var(--pinkSecondary) 100%); */
-        /* background-size: 400% 100%; */
-        /* filter: blur(10px); */
     }
     
     .card.data-analytics::before {
@@ -98,11 +122,131 @@
         box-shadow: 0 0 220px var(--pinkPrimary);
     }
     
-    @keyframes gradCycle {
-        0% {
-            background-position: bottom right;
-        }
-        100% {
-            background-position: top left;
-        }
+    .sql :is(h5,
+    h4,
+    h3,
+    button,
+    span) {
+        background: var(--cyanLinGrad);
+        background-color: linear-gradient(to right, var(--cyanPrimary) 0%, var(--cyanSecondary) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .card.sql {
+        border: 6px inset var(--cyanPrimary);
+        background-color: var(--cyanTertiary);
+    }
+    
+    .card.sql:hover {
+        background-image: var(--cyanTopLeftGrad);
+        background-position: bottom right;
+        background-size: 3000%;
+        border: 6px inset var(--cyanPrimary);
+        background-repeat: repeat-x;
+        animation: gradCycle .75s ease-in infinite alternate;
+    }
+    
+    .card.sql::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: .3s;
+        z-index: -1;
+        color: var(--cyanPrimary);
+        box-shadow: 0 0 5px var(--cyanPrimary);
+        text-shadow: 0 0 5px var(--cyanPrimary);
+    }
+    
+    .card.sql:hover::before {
+        box-shadow: 0 0 220px var(--cyanPrimary);
+    }
+    
+    .software-engineering :is(h5,
+    h4,
+    h3,
+    button,
+    span) {
+        background: var(--blueLinGrad);
+        background-color: linear-gradient(to right, var(--bluePrimary) 0%, var(--blueSecondary) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .card.software-engineering {
+        border: 6px inset var(--bluePrimary);
+        background-color: var(--blueTertiary);
+    }
+    
+    .card.software-engineering:hover {
+        background-image: var(--blueTopLeftGrad);
+        background-position: bottom right;
+        background-size: 3000%;
+        border: 6px inset var(--bluePrimary);
+        background-repeat: repeat-x;
+        animation: gradCycle .75s ease-in infinite alternate;
+    }
+    
+    .card.software-engineering::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: .3s;
+        z-index: -1;
+        color: var(--bluePrimary);
+        box-shadow: 0 0 5px var(--bluePrimary);
+        text-shadow: 0 0 5px var(--bluePrimary);
+    }
+    
+    .card.software-engineering:hover::before {
+        box-shadow: 0 0 220px var(--bluePrimary);
+    }
+    
+    .machine-learning :is(h5,
+    h4,
+    h3,
+    button,
+    span) {
+        background: var(--violetLinGrad);
+        background-color: linear-gradient(to right, var(--violetPrimary) 0%, var(--violetSecondary) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .card.machine-learning {
+        border: 6px inset var(--violetPrimary);
+        background-color: var(--violetTertiary);
+    }
+    
+    .card.machine-learning:hover {
+        background-image: var(--violetTopLeftGrad);
+        background-position: bottom right;
+        background-size: 3000%;
+        border: 6px inset var(--violetPrimary);
+        background-repeat: repeat-x;
+        animation: gradCycle .75s ease-in infinite alternate;
+    }
+    
+    .card.machine-learning::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: .3s;
+        z-index: -1;
+        color: var(--violetPrimary);
+        box-shadow: 0 0 5px var(--violetPrimary);
+        text-shadow: 0 0 5px var(--violetPrimary);
+    }
+    
+    .card.machine-learning:hover::before {
+        box-shadow: 0 0 220px var(--violetPrimary);
     }
