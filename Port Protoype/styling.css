@@ -87,7 +87,7 @@
         margin: 0;
         padding: 0;
         border: none;
-        color: transparent;
+        /* color: transparent; */
     }
     /* for gradient animations, go from bottom right to top left */
     
