@@ -8,7 +8,8 @@ const SmenuNav = new Audio('sfx/SND_00038.wav');
 
 const BGMMusic = new Audio('music/Super Smash Bros Brawl Trophy Gallery.mp3');
 BGMMusic.loop = true;
-BGMMusic.volume = .2;
+BGMVolume = .2;
+BGMMusic.volume = BGMVolume;
 
 menuHover.volume = .2;
 menuClick.volume = .3;
@@ -59,11 +60,27 @@ $(document).ready(function() {
     });
 
     $('.modal').on('hide.bs.modal', function() {
-        console.log("please");
         SmenuExit.load();
         SmenuExit.play();
 
     });
+    // defaults the onbutton to off
+    $("#onButton").hide();
+    // click mute button
+    $("#muteButton").click(function() {
+        $("#onButton").toggle();
+        $("#muteButton").toggle();
+        BGMMusic.pause();
+
+    });
+
+    // click onbutton button
+    $("#onButton").click(function() {
+        $("#onButton").toggle();
+        $("#muteButton").toggle();
+        BGMMusic.play();
+    });
+
     // should have way for bgm music to pause when viewing video
     // function onPlayerStateChange(event) {
     //     switch (event.data) {
