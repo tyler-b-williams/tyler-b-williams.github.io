@@ -69,6 +69,7 @@
     .card {
         /* border-radius: 4px; */
         /* background: #fff; */
+        /* -webkit-transform: translate3d(0, 0, 0); supposed to stop flickering (but no dice)*/
         transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
         cursor: pointer;
         border: 6px inset #ffffff;

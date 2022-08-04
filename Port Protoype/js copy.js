@@ -65,26 +65,26 @@ $(document).ready(function() {
 
     });
     // should have way for bgm music to pause when viewing video
-    // function onPlayerStateChange(event) {
-    //     switch (event.data) {
-    //         case YT.PlayerState.UNSTARTED:
-    //             console.log('unstarted');
-    //             break;
-    //         case YT.PlayerState.ENDED:
-    //             console.log('ended');
-    //             break;
-    //         case YT.PlayerState.PLAYING:
-    //             console.log('playing');
-    //             break;
-    //         case YT.PlayerState.PAUSED:
-    //             console.log('paused');
-    //             break;
-    //         case YT.PlayerState.BUFFERING:
-    //             console.log('buffering');
-    //             break;
-    //         case YT.PlayerState.CUED:
-    //             console.log('video cued');
-    //             break;
-    //     }
-    // }
+    function onPlayerStateChange(event) {
+        switch (event.data) {
+            case YT.PlayerState.UNSTARTED:
+                console.log('unstarted');
+                break;
+            case YT.PlayerState.ENDED:
+                console.log('ended');
+                break;
+            case YT.PlayerState.PLAYING:
+                console.log('playing');
+                break;
+            case YT.PlayerState.PAUSED:
+                console.log('paused');
+                break;
+            case YT.PlayerState.BUFFERING:
+                console.log('buffering');
+                break;
+            case YT.PlayerState.CUED:
+                console.log('video cued');
+                break;
+        }
+    }
 });
