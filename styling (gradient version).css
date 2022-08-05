@@ -131,9 +131,8 @@
     h3,
     button,
     span) {
-        background: white;
-        /* background: var(--pinkLinGrad); */
-        /* background-color: linear-gradient(to right, var(--pinkPrimary) 0%, var(--pinkSecondary) 100%); */
+        background: var(--pinkLinGrad);
+        background-color: linear-gradient(to right, var(--pinkPrimary) 0%, var(--pinkSecondary) 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -175,9 +174,8 @@
     h3,
     button,
     span) {
-        background: white;
-        /* background: var(--cyanLinGrad); */
-        /* background-color: linear-gradient(to right, var(--cyanPrimary) 0%, var(--cyanSecondary) 100%); */
+        background: var(--cyanLinGrad);
+        background-color: linear-gradient(to right, var(--cyanPrimary) 0%, var(--cyanSecondary) 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -219,9 +217,8 @@
     h3,
     button,
     span) {
-        background: white;
-        /* background: var(--blueLinGrad); */
-        /* background-color: linear-gradient(to right, var(--bluePrimary) 0%, var(--blueSecondary) 100%); */
+        background: var(--blueLinGrad);
+        background-color: linear-gradient(to right, var(--bluePrimary) 0%, var(--blueSecondary) 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -263,9 +260,8 @@
     h3,
     button,
     span) {
-        background: white;
-        /* background: var(--violetLinGrad); */
-        /* background-color: linear-gradient(to right, var(--violetPrimary) 0%, var(--violetSecondary) 100%); */
+        background: var(--violetLinGrad);
+        background-color: linear-gradient(to right, var(--violetPrimary) 0%, var(--violetSecondary) 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
