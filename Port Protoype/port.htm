@@ -32,17 +32,15 @@
         <div>
             <div class="text-left">
                 <button type="button" id="muteButton" class="btn btn-danger">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pause-fill" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pause-fill" viewBox="0 0 20 20">
                         <path d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5zm5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5z"/>
-                      </svg>
-            
-                    Mute Music?</button>
+                      </svg>Mute Music/Audio?</button>
             </div>
             <div class="text-left">
-                <button type="button" id="onButton" class="btn btn-primary">
+                <button type="button" id="onButton" class="btn btn-success">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-play" viewBox="0 0 20 20">
                         <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
-                      </svg>Turn on Music?</button>
+                      </svg>Turn on Music/Audio?</button>
             </div>
         </div>
         <!-- <p></p> -->
@@ -189,7 +187,6 @@
 
     </div>
     </div>
-    <!-- </div> -->
     <!-- Modal -->
 
     <!--//* MODALS/CAROUSELS SECTION -->
@@ -339,9 +336,6 @@
             </div>
         </div>
     </div>
-    <!--//!FILL IN SKELETON  -->
-    <!--//!FILL IN SKELETON  -->
-    <!--//!FILL IN SKELETON  -->
     <!-- Modal -->
     <div class="modal fade" id="orthopedic-classification-modal" tabindex="-1" role="dialog" aria-labelledby="orthopedic-classification-modal" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered text-center modal-xl" role="document">
@@ -363,37 +357,40 @@
                             <li data-bs-target="#orthopedic-classification" data-bs-slide-to="4" aria-label="Fifth slide"></li>
                             <li data-bs-target="#orthopedic-classification" data-bs-slide-to="5" aria-label="Sixth slide"></li>
                             <li data-bs-target="#orthopedic-classification" data-bs-slide-to="6" aria-label="Seventh slide"></li>
+                            <li data-bs-target="#orthopedic-classification" data-bs-slide-to="7" aria-label="Eighth slide"></li>
                         </ol>
                         <div class="carousel-inner" role="listbox">
                             <div class="carousel-item active">
-                                <img src="img/Convolutional Classification/code pic A.png" class="w-100 d-block" alt="First slide">
-                                <p>FILL IN THE BLANKS</p>
+                                <img src="img/Orthopedic/Screenshot 1.png" class="w-100 d-block" alt="First slide">
+                                <p>Preprocessing of data and splitting into test/training groups</p>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/Convolutional Classification/code pic A.png" class="w-100 d-block" alt="Second slide">
-                                <p>FILL IN THE BLANKS</p>
+                                <img src="img/Orthopedic/Screenshot 2.png" class="w-100 d-block" alt="Second slide">
+                                <p>Evaluating balanced score of random forest classifier and graphing hyperparameter optimization</p>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/Convolutional Classification/code pic A.png" class="w-100 d-block" alt="Third slide">
-                                <p>FILL IN THE BLANKS</p>
-                                <p>FILL IN THE BLANKS</p>
+                                <img src="img/Orthopedic/Screenshot 3.png" class="w-100 d-block" alt="Third slide">
+                                <p>Finding accuracy and feature importance of random forest</p>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/Convolutional Classification/code pic A.png" class="w-100 d-block" alt="Fourth slide">
-                                <p>FILL IN THE BLANKS</p>
+                                <img src="img/Orthopedic/Screenshot 4.png" class="w-100 d-block" alt="Fourth slide">
+                                <p>Running principal component analysis to see top features of data set</p>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/Convolutional Classification/code pic A.png" class="w-100 d-block" alt="Fifth slide">
-                                <p>FILL IN THE BLANKS</p>
-                                <p>FILL IN THE BLANKS</p>
+                                <img src="img/Orthopedic/Screenshot 5.png" class="w-100 d-block" alt="Fifth slide">
+                                <p>Using top 3 principal components in data to cover variance</p>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/Convolutional Classification/code pic A.png" class="w-100 d-block" alt="Sixth slide">
-                                <p>FILL IN THE BLANKS</p>
+                                <img src="img/Orthopedic/Screenshot 6.png" class="w-100 d-block" alt="Sixth slide">
+                                <p>Balanced accuracy of random forest relying on principal components</p>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/Convolutional Classification/code pic A.png" class="w-100 d-block" alt="Seventh slide">
-                                <p>FILL IN THE BLANKS</p>
+                                <img src="img/Orthopedic/Screenshot 7.png" class="w-100 d-block" alt="Seventh slide">
+                                <p>Graphing the optimal amount of principal components to use to cover 95% variance of original data</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/Orthopedic/Screenshot 8.png" class="w-100 d-block" alt="Eighth slide">
+                                <p>Accuracy using optimal random forest along with optimal number of principal components to predict data with less.</p>
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#orthopedic-classification" data-bs-slide="prev">
@@ -508,39 +505,27 @@
                             <li data-bs-target="#carousel-videogame-regression" data-bs-slide-to="2" aria-label="Third slide"></li>
                             <li data-bs-target="#carousel-videogame-regression" data-bs-slide-to="3" aria-label="Fourth slide"></li>
                             <li data-bs-target="#carousel-videogame-regression" data-bs-slide-to="4" aria-label="Fifth slide"></li>
-                            <li data-bs-target="#carousel-videogame-regression" data-bs-slide-to="5" aria-label="Sixth slide"></li>
-                            <li data-bs-target="#carousel-videogame-regression" data-bs-slide-to="6" aria-label="Seventh slide"></li>
                         </ol>
                         <div class="carousel-inner" role="listbox">
                             <div class="carousel-item active">
-                                <img src="img/Convolutional Classification/code pic A.png" class="w-100 d-block" alt="First slide">
-                                <p>FILL IN THE BLANKS</p>
+                                <img src="img/Video game reg/Screenshot 1.png" class="w-100 d-block" alt="First slide">
+                                <p>Preprocessing videogame data and cleaning NA values.</p>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/Convolutional Classification/code pic A.png" class="w-100 d-block" alt="Second slide">
-                                <p>FILL IN THE BLANKS</p>
+                                <img src="img/Video game reg/Screenshot 2.png" class="w-100 d-block" alt="Second slide">
+                                <p>More basic analytics done on data before building model</p>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/Convolutional Classification/code pic A.png" class="w-100 d-block" alt="Third slide">
-                                <p>FILL IN THE BLANKS</p>
-                                <p>FILL IN THE BLANKS</p>
+                                <img src="img/Video game reg/Screenshot 3.png" class="w-100 d-block" alt="Third slide">
+                                <p>More preprocessing, this time adding dummies and normalizing features</p>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/Convolutional Classification/code pic A.png" class="w-100 d-block" alt="Fourth slide">
-                                <p>FILL IN THE BLANKS</p>
+                                <img src="img/Video game reg/Screenshot 4.png" class="w-100 d-block" alt="Fourth slide">
+                                <p>Complex neural network model with Keras on the cleaned data for regression</p>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/Convolutional Classification/code pic A.png" class="w-100 d-block" alt="Fifth slide">
-                                <p>FILL IN THE BLANKS</p>
-                                <p>FILL IN THE BLANKS</p>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/Convolutional Classification/code pic A.png" class="w-100 d-block" alt="Sixth slide">
-                                <p>FILL IN THE BLANKS</p>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/Convolutional Classification/code pic A.png" class="w-100 d-block" alt="Seventh slide">
-                                <p>FILL IN THE BLANKS</p>
+                                <img src="img/Video game reg/Screenshot 5.png" class="w-100 d-block" alt="Fifth slide">
+                                <p>Graph of complex NN model training spanning over 154 epochs to minimize mean average error</p>
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carousel-videogame-regression" data-bs-slide="prev">
@@ -581,62 +566,49 @@
                             <li data-bs-target="#carousel-sensorless-drive" data-bs-slide-to="3" aria-label="Fourth slide"></li>
                             <li data-bs-target="#carousel-sensorless-drive" data-bs-slide-to="4" aria-label="Fifth slide"></li>
                             <li data-bs-target="#carousel-sensorless-drive" data-bs-slide-to="5" aria-label="Sixth slide"></li>
-                            <li data-bs-target="#carousel-sensorless-drive" data-bs-slide-to="6" aria-label="Seventh slide"></li>
                         </ol>
                         <div class="carousel-inner" role="listbox">
                             <div class="carousel-item active">
-                                <img src="img/Convolutional Classification/code pic A.png" class="w-100 d-block" alt="First slide">
-                                <p>FILL IN THE BLANKS</p>
+                                <img src="img/Sensorless drive/Screenshot 1.png" class="w-100 d-block" alt="First slide">
+                                <p>Preprocessing data and normalizing x features within 0-1 for better model prediction.</p>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/Convolutional Classification/code pic A.png" class="w-100 d-block" alt="Second slide">
-                                <p>FILL IN THE BLANKS</p>
+                                <img src="img/Sensorless drive/Screenshot 2.png" class="w-100 d-block" alt="Second slide">
+                                <p>Constructing baseline neural network model and training for 20 epochs</p>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/Convolutional Classification/code pic A.png" class="w-100 d-block" alt="Third slide">
-                                <p>FILL IN THE BLANKS</p>
-                                <p>FILL IN THE BLANKS</p>
+                                <img src="img/Sensorless drive/Screenshot 3.png" class="w-100 d-block" alt="Third slide">
+                                <p>Graph of baseline model training over 20 epochs</p>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/Convolutional Classification/code pic A.png" class="w-100 d-block" alt="Fourth slide">
-                                <p>FILL IN THE BLANKS</p>
+                                <img src="img/Sensorless drive/Screenshot 4.png" class="w-100 d-block" alt="Fourth slide">
+                                <p>More complex neural network model made to achieve 99% accuracy</p>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/Convolutional Classification/code pic A.png" class="w-100 d-block" alt="Fifth slide">
-                                <p>FILL IN THE BLANKS</p>
-                                <p>FILL IN THE BLANKS</p>
+                                <img src="img/Sensorless drive/Screenshot 5.png" class="w-100 d-block" alt="Fifth slide">
+                                <p>Graph of complex model training over 20 epochs</p>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/Convolutional Classification/code pic A.png" class="w-100 d-block" alt="Sixth slide">
-                                <p>FILL IN THE BLANKS</p>
+                                <img src="img/Sensorless drive/Screenshot 6.png" class="w-100 d-block" alt="Sixth slide">
+                                <p>Graphing tests of various learning rates and its affect on performance and model accuracy</p>
                             </div>
-                            <div class="carousel-item">
-                                <img src="img/Convolutional Classification/code pic A.png" class="w-100 d-block" alt="Seventh slide">
-                                <p>FILL IN THE BLANKS</p>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-sensorless-drive" data-bs-slide="prev">
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-sensorless-drive" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-sensorless-drive" data-bs-slide="next">
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel-sensorless-drive" data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
+                        </div>
+                        <!-- carousel-->
                     </div>
-                    <!-- carousel-->
-                </div>
 
+                </div>
             </div>
         </div>
     </div>
     <!-- Modal -->
-
-
-    <!--//!FILL IN SKELETON  -->
-    <!--//!FILL IN SKELETON  -->
-    <!--//!FILL IN SKELETON  -->
-
     <!-- Modal -->
     <div class="modal fade" id="vr-disc-golf-modal" tabindex="-1" role="dialog" aria-labelledby="disc-golf" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered text-center modal-xl" role="document">
@@ -703,9 +675,6 @@
         </div>
     </div>
     <!-- Modal -->
-    <!--//!FILL IN SKELETON  -->
-    <!--//!FILL IN SKELETON  -->
-    <!--//!FILL IN SKELETON  -->
 
     <!-- Modal -->
     <div class="modal fade" id="stroke-prediction-modal" tabindex="-1" role="dialog" aria-labelledby="stroke-prediction-modal" aria-hidden="true">
@@ -731,37 +700,40 @@
                             <li data-bs-target="#carousel-stroke-prediction" data-bs-slide-to="4" aria-label="Fifth slide"></li>
                             <li data-bs-target="#carousel-stroke-prediction" data-bs-slide-to="5" aria-label="Sixth slide"></li>
                             <li data-bs-target="#carousel-stroke-prediction" data-bs-slide-to="6" aria-label="Seventh slide"></li>
+                            <li data-bs-target="#carousel-stroke-prediction" data-bs-slide-to="7" aria-label="Eighth slide"></li>
                         </ol>
                         <div class="carousel-inner" role="listbox">
                             <div class="carousel-item active">
-                                <img src="img/Convolutional Classification/code pic A.png" class="w-100 d-block" alt="First slide">
-                                <p>FILL IN THE BLANKS</p>
+                                <img src="img/Stroke prediction/Screenshot 1.png" class="w-100 d-block" alt="First slide">
+                                <p>Preprocessing patients' stroke data (NA's dropped)</p>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/Convolutional Classification/code pic A.png" class="w-100 d-block" alt="Second slide">
-                                <p>FILL IN THE BLANKS</p>
+                                <img src="img/Stroke prediction/Screenshot 2.png" class="w-100 d-block" alt="Second slide">
+                                <p>Using Scikitlearn's random forest classifier model and confusion matrix for testing afterwards</p>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/Convolutional Classification/code pic A.png" class="w-100 d-block" alt="Third slide">
-                                <p>FILL IN THE BLANKS</p>
-                                <p>FILL IN THE BLANKS</p>
+                                <img src="img/Stroke prediction/Screenshot 3.png" class="w-100 d-block" alt="Third slide">
+                                <p>Looking at balanced accuracy afterwards for holistic accuracy</p>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/Convolutional Classification/code pic A.png" class="w-100 d-block" alt="Fourth slide">
-                                <p>FILL IN THE BLANKS</p>
+                                <img src="img/Stroke prediction/Screenshot 4.png" class="w-100 d-block" alt="Fourth slide">
+                                <p>Using XGboost model to check for possible higher accuracy</p>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/Convolutional Classification/code pic A.png" class="w-100 d-block" alt="Fifth slide">
-                                <p>FILL IN THE BLANKS</p>
-                                <p>FILL IN THE BLANKS</p>
+                                <img src="img/Stroke prediction/Screenshot 5.png" class="w-100 d-block" alt="Fifth slide">
+                                <p>Comparison of both models</p>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/Convolutional Classification/code pic A.png" class="w-100 d-block" alt="Sixth slide">
-                                <p>FILL IN THE BLANKS</p>
+                                <img src="img/Stroke prediction/Screenshot 6.png" class="w-100 d-block" alt="Sixth slide">
+                                <p>Grid search hyperparameter optimization of models</p>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/Convolutional Classification/code pic A.png" class="w-100 d-block" alt="Seventh slide">
-                                <p>FILL IN THE BLANKS</p>
+                                <img src="img/Stroke prediction/Screenshot 7.png" class="w-100 d-block" alt="Seventh slide">
+                                <p>Comparison of both optimized models</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/Stroke prediction/Screenshot 8.png" class="w-100 d-block" alt="Eighth slide">
+                                <p>Both models ROC curves visualized</p>
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carousel-stroke-prediction" data-bs-slide="prev">
@@ -797,40 +769,23 @@
                             <li data-bs-target="#carousel-stock-market" data-bs-slide-to="1" aria-label="Second slide"></li>
                             <li data-bs-target="#carousel-stock-market" data-bs-slide-to="2" aria-label="Third slide"></li>
                             <li data-bs-target="#carousel-stock-market" data-bs-slide-to="3" aria-label="Fourth slide"></li>
-                            <li data-bs-target="#carousel-stock-market" data-bs-slide-to="4" aria-label="Fifth slide"></li>
-                            <li data-bs-target="#carousel-stock-market" data-bs-slide-to="5" aria-label="Sixth slide"></li>
-                            <li data-bs-target="#carousel-stock-market" data-bs-slide-to="6" aria-label="Seventh slide"></li>
                         </ol>
                         <div class="carousel-inner" role="listbox">
                             <div class="carousel-item active">
-                                <img src="img/Convolutional Classification/code pic A.png" class="w-100 d-block" alt="First slide">
-                                <p>FILL IN THE BLANKS</p>
+                                <img src="img/Stock Market/Screenshot 1.png" class="w-100 d-block" alt="First slide">
+                                <p>Graph of stock market data to be used for model development</p>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/Convolutional Classification/code pic A.png" class="w-100 d-block" alt="Second slide">
-                                <p>FILL IN THE BLANKS</p>
+                                <img src="img/Stock Market/Screenshot 2.png" class="w-100 d-block" alt="Second slide">
+                                <p>graphed Sci kit learn Linear regression model prediction against test data results</p>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/Convolutional Classification/code pic A.png" class="w-100 d-block" alt="Third slide">
-                                <p>FILL IN THE BLANKS</p>
-                                <p>FILL IN THE BLANKS</p>
+                                <img src="img/Stock Market/Screenshot 3.png" class="w-100 d-block" alt="Third slide">
+                                <p>Hyperparameter Tuning</p>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/Convolutional Classification/code pic A.png" class="w-100 d-block" alt="Fourth slide">
-                                <p>FILL IN THE BLANKS</p>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/Convolutional Classification/code pic A.png" class="w-100 d-block" alt="Fifth slide">
-                                <p>FILL IN THE BLANKS</p>
-                                <p>FILL IN THE BLANKS</p>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/Convolutional Classification/code pic A.png" class="w-100 d-block" alt="Sixth slide">
-                                <p>FILL IN THE BLANKS</p>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/Convolutional Classification/code pic A.png" class="w-100 d-block" alt="Seventh slide">
-                                <p>FILL IN THE BLANKS</p>
+                                <img src="img/Stock Market/Screenshot 4.png" class="w-100 d-block" alt="Fourth slide">
+                                <p>Comparison between different optimized models' accuracies</p>
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carousel-stock-market" data-bs-slide="prev">
@@ -849,9 +804,6 @@
         </div>
     </div>
     <!-- Modal -->
-    <!--//!FILL IN SKELETON  -->
-    <!--//!FILL IN SKELETON  -->
-    <!--//!FILL IN SKELETON  -->
     <!-- END OF MODALS -->
 </body>
 

@@ -14,9 +14,11 @@ BGMMusic.volume = BGMVolume;
 menuHover.volume = .2;
 menuClick.volume = .3;
 
-SmenuHover.volume = .2;
-SmenuClick.volume = .2;
-SmenuExit.volume = .2;
+SmenuVolume = .2;
+SmenuHover.volume = SmenuVolume;
+SmenuClick.volume = SmenuVolume;
+SmenuExit.volume = SmenuVolume;
+
 
 // component for cards to play sound effects on hover/click
 
@@ -71,6 +73,9 @@ $(document).ready(function() {
         $("#onButton").toggle();
         $("#muteButton").toggle();
         BGMMusic.pause();
+        SmenuHover.volume = 0;
+        SmenuClick.volume = 0;
+        SmenuExit.volume = 0;
 
     });
 
@@ -79,6 +84,9 @@ $(document).ready(function() {
         $("#onButton").toggle();
         $("#muteButton").toggle();
         BGMMusic.play();
+        SmenuHover.volume = SmenuVolume;
+        SmenuClick.volume = SmenuVolume;
+        SmenuExit.volume = SmenuVolume;
     });
 
     // should have way for bgm music to pause when viewing video
