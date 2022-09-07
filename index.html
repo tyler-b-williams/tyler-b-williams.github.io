@@ -51,6 +51,18 @@
                 <!--//* PROJECT BOXES -->
                 <!--//* PROJECT BOXES -->
                 <div class="col">
+                    <div class="card shadow-sm machine-learning h-100 ">
+                        <!-- Button trigger modal -->
+                        <button class="h-100 w-100" type="button" data-bs-toggle="modal" data-bs-target="#smash-clustering">
+                            <title>Super Smash Brothers Character Clustering and Visualization</title>.</title>
+                                    <h5 class = "card-title position-absolute top-50 start-50 translate-middle ">Super Smash Brothers Character Clustering and Visualization</h5>
+                                    <span class="card-text position-absolute bottom-0 end-0 p-1 mt-6">September 2022- </span>
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="col">
                     <div class="card shadow-sm data-analytics h-100 ">
                         <!-- Button trigger modal -->
                         <button class="h-100 w-100" type="button" data-bs-toggle="modal" data-bs-target="#covid-mortality-project">
@@ -186,6 +198,102 @@
     <!--//* MODALS/CAROUSELS SECTION -->
     <!--//* MODALS/CAROUSELS SECTION -->
     <!--//* MODALS/CAROUSELS SECTION -->
+    <div class="modal fade" id="smash-clustering" tabindex="-1" role="dialog" aria-labelledby="smash-clustering" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered text-center modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title ">Covid Mortality Regression</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Analyzed last patch of frame data for characters of Smash brothers to identify insights/trends, using unsupervised learning methods such as PCA and clustering in jupyter notebook.
+
+                    <!--carousel-->
+                    <div id="carousel-smash-clustering" class="carousel slide carousel-dark" data-bs-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-bs-target="#carousel-smash-clustering" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
+                            <li data-bs-target="#carousel-smash-clustering" data-bs-slide-to="1" aria-label="Second slide"></li>
+                            <li data-bs-target="#carousel-smash-clustering" data-bs-slide-to="2" aria-label="Third slide"></li>
+                            <li data-bs-target="#carousel-smash-clustering" data-bs-slide-to="3" aria-label="Fourth slide"></li>
+                            <li data-bs-target="#carousel-smash-clustering" data-bs-slide-to="4" aria-label="Fifth slide"></li>
+                            <li data-bs-target="#carousel-smash-clustering" data-bs-slide-to="5" aria-label="Sixth slide"></li>
+                            <li data-bs-target="#carousel-smash-clustering" data-bs-slide-to="6" aria-label="Seventh slide"></li>
+                            <li data-bs-target="#carousel-smash-clustering" data-bs-slide-to="7" aria-label="Eighth slide"></li>
+                            <li data-bs-target="#carousel-smash-clustering" data-bs-slide-to="8" aria-label="Ninth slide"></li>
+                            <li data-bs-target="#carousel-smash-clustering" data-bs-slide-to="9" aria-label="Tenth slide"></li>
+                            <li data-bs-target="#carousel-smash-clustering" data-bs-slide-to="10" aria-label="Eleventh slide"></li>
+
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <embed src="img\Smash Bros Clustering and Visualization\3d PCA FrameData Visualization.mp4" height="600" width="800" class="w-100 d-block" autostart="true" alt="First slide">
+                                <p>Preview of final plot </p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img\Smash Bros Clustering and Visualization\Plotly pic B.png" class="w-100 d-block" alt="Eleventh slide">
+                                <p>Finalized Plotly 3d scatterplot</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img\Smash Bros Clustering and Visualization\code pic A.png" class="w-100 d-block" alt="Second slide">
+                                <p>Preperation of reading in data...</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img\Smash Bros Clustering and Visualization\code pic B.png" class="w-100 d-block" alt="Third slide">
+                                <p>Pipeline for reading the datamined excel data into pandas dataframe </p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img\Smash Bros Clustering and Visualization\code pic C.png" class="w-100 d-block" alt="Fourth slide">
+                                <p>Cleaning data with regex for extracting and converting raw numeric values and aligning column data types</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img\Smash Bros Clustering and Visualization\code pic D.png" class="w-100 d-block" alt="Fifth slide">
+                                <p>The now processed and cleaned data that's ready to be analyzed</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img\Smash Bros Clustering and Visualization\code pic E.png" class="w-100 d-block" alt="Sixth slide">
+                                <p>Quick comparison of whether standard PCA or Kernel type would be more efficient for lowering data dimensionality</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img\Smash Bros Clustering and Visualization\code pic F.png" class="w-100 d-block" alt="Seventh slide">
+                                <p>Quick check for optimal number of clusters to use in model going forward</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img\Smash Bros Clustering and Visualization\code pic G.png" class="w-100 d-block" alt="Eighth slide">
+                                <p>Selecting Bayesian Gaussian Mixture model for clustering and previewing predictions for character clusters </p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img\Smash Bros Clustering and Visualization\code pic H.png" class="w-100 d-block" alt="Ninth slide">
+                                <p>Dataframe readjustment to properly alignment character indexes and clusters </p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img\Smash Bros Clustering and Visualization\code pic I.png" class="w-100 d-block" alt="Tenth slide">
+                                <p>Code used to produce 3d matplotlib scatterplot using 3dPCA for cluster visualizations </p>
+                            </div>
+
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-smash-clustering" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-smash-clustering" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <p>
+                        <a href="https://github.com/tyler-b-williams/SmashBrosUltimateVisualization">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                              </svg>Github link</a>
+                    </p>
+                    <!-- carousel-->
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
     <div class="modal fade" id="covid-mortality-project" tabindex="-1" role="dialog" aria-labelledby="covid-mortality-project" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered text-center modal-xl" role="document">
             <div class="modal-content">
