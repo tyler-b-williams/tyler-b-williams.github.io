@@ -51,6 +51,17 @@
                 <!--//* PROJECT BOXES -->
                 <!--//* PROJECT BOXES -->
                 <div class="col">
+                    <div class="card shadow-sm data-analytics h-100 ">
+                        <!-- Button trigger modal -->
+                        <button class="h-100 w-100" type="button" data-bs-toggle="modal" data-bs-target="#japan-census">
+                            <title>Japan Census 2021 PowerBI Dashboard</title>
+                                    <h5 class = "card-title position-absolute top-50 start-50 translate-middle ">Japan 2021 Census PowerBI Dashboard</h5>
+                                    <span class="card-text position-absolute bottom-0 end-0 p-1 mt-6">July 2023 </span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col">
                     <div class="card shadow-sm machine-learning h-100 ">
                         <!-- Button trigger modal -->
                         <button class="h-100 w-100" type="button" data-bs-toggle="modal" data-bs-target="#videogame-graphics">
@@ -212,7 +223,89 @@
     <!--//* MODALS/CAROUSELS SECTION -->
     <!-- Modal -->
 
-    <div class="modal fade" id="videogame-graphics" tabindex="-1" role="dialog" aria-labelledby="smash-clustering" aria-hidden="true">
+    <div class="modal fade" id="japan-census" tabindex="-1" role="dialog" aria-labelledby="JPN-census" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered text-center modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title ">Japan 2021 Census PowerBI Dashboard</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Analyzed publicly available data from <a href="https://www.e-stat.go.jp/en/stat-search/files?page=1&layout=datalist&toukei=00200502&tstat=000001201623&cycle=0&year=20230&month=0&tclass1=000001201624&stat_infid=000040019841&tclass2val=0"
+                        target="_blank">Japan's official Government Statistics website</a>
+
+                    <!--carousel-->
+                    <div id="carousel-japan-census" class="carousel slide carousel-dark" data-bs-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-bs-target="#carousel-japan-census" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
+                            <li data-bs-target="#carousel-japan-census" data-bs-slide-to="1" aria-label="Second slide"></li>
+                            <li data-bs-target="#carousel-japan-census" data-bs-slide-to="2" aria-label="Third slide"></li>
+                            <li data-bs-target="#carousel-japan-census" data-bs-slide-to="3" aria-label="Fourth slide"></li>
+                            <li data-bs-target="#carousel-japan-census" data-bs-slide-to="4" aria-label="Fifth slide"></li>
+                            <li data-bs-target="#carousel-japan-census" data-bs-slide-to="5" aria-label="Sixth slide"></li>
+                            <!-- <li data-bs-target="#carousel-japan-census" data-bs-slide-to="6" aria-label="Seventh slide"></li> -->
+
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <!-- <embed src="img/Japan Census Dashboard/Screenshot 1.png" height="600" width="800" class="w-100 d-block" autostart="true" alt="First slide"> -->
+                                <a href="https://app.powerbi.com/links/4p2bs1e-1a?ctid=d5fe813e-0caa-432a-b2ac-d555aa91bd1c&pbi_source=linkShare" target="_blank" rel="noopener noreferrer"><img class="w-100 d-block" src="img/Japan Census Dashboard/final dashboard.png" alt=""></a>
+                                <p></p>
+                                <p>final dashboard (clickable link to fully view online)</p>
+                            </div>
+                            <div class="carousel-item">
+                                <embed src="img/Japan Census Dashboard/Screenshot 1.png" height="600" width="800" class="w-100 d-block" autostart="true" alt="Second slide">
+                                <p></p>
+                                <p>data source we'll be visualizing for insights</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src='img/Japan Census Dashboard/Screenshot 2.png' class="w-100 d-block" alt="Third slide">
+                                <p>initial dataset preprocessing and cleaning (wrote python script/ jupyter notebook to do preliminary cleaning)</p>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src='img/Japan Census Dashboard/Screenshot 3.png' class="w-100 d-block" alt="Fourth slide">
+                                <p>Secondary transformations and fixes done in PowerBI Query Editor</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src='img/Japan Census Dashboard/Screenshot 4.png' class="w-100 d-block" alt="Fifth slide">
+                                <p>Rudimentary primary dashboard done based on population</p>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src='img/Japan Census Dashboard/Screenshot 5.png' class="w-100 d-block" alt="Sixth slide">
+                                <p>DAX used for field parameter selection in dashboard </p>
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-japan-census" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-japan-census" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <!-- <p>
+                        <a href="https://github.com/tyler-b-williams/SmashBrosUltimateVisualization">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                              </svg>Github link</a>
+                    </p> -->
+                    <!-- carousel-->
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+
+
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="videogame-graphics" tabindex="-1" role="dialog" aria-labelledby="VGA-EDA" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered text-center modal-xl" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -221,6 +314,7 @@
                 </div>
                 <div class="modal-body">
                     Explored data of Video games throughout the console generations to answer the question of "Do graphics matter for a video game's success?" in jupyter notebook.
+                    <a href="https://www.kaggle.com/datasets/holmjason2/videogamedata" target="_blank">Kaggle data source</a>
 
                     <!--carousel-->
                     <div id="carousel-videogame-graphics" class="carousel slide carousel-dark" data-bs-ride="carousel">
@@ -238,9 +332,6 @@
                         <div class="carousel-inner" role="listbox">
                             <div class="carousel-item active">
                                 <embed src="img/VideoGame Graphics/images/data rows.jpg" height="600" width="800" class="w-100 d-block" autostart="true" alt="First slide">
-                                <p></p>
-                                <p>Data We'll be analyzing <a href="https://www.kaggle.com/datasets/holmjason2/videogamedata">from Kaggle</a></p>
-                                <!-- <p>DLC Characters such as Kazuya, Mythra, Sepiroth, Minmim, etc. are shown to be in a class/league of their own </p> -->
                             </div>
                             <div class="carousel-item">
                                 <img src='img/VideoGame Graphics/images/data preprocessing and cleaning.jpg' class="w-100 d-block" alt="Second slide">
@@ -392,7 +483,7 @@
                         </button>
                     </div>
                     <p>
-                        <a href="https://github.com/tyler-b-williams/SmashBrosUltimateVisualization">
+                        <a href="https://github.com/tyler-b-williams/SmashBrosUltimateVisualization" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
                             <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
                               </svg>Github link</a>
@@ -462,7 +553,7 @@
                 </div>
                 <div class="modal-body">
                     Achieved model prediction accuracy of 85% for classification of 60,000 images into 10 classes. Methods include convolution and pooling layers, transfer learning, data augmentation. Overfitting ameliorated with regularization and batch normalization. Project
-                    used <a href="https://www.cs.toronto.edu/~kriz/cifar.html">CIFAR-10 dataset</a>.
+                    used <a href="https://www.cs.toronto.edu/~kriz/cifar.html" target="_blank">CIFAR-10 dataset</a>.
                     <!--carousel-->
                     <div id="carousel-convolutional-NN" class="carousel slide carousel-dark" data-bs-ride="carousel">
                         <ol class="carousel-indicators">
@@ -538,7 +629,7 @@
                         <iframe class="embed-responsive-item w-100 " height="300px" src="https://www.youtube.com/embed/qxeSApOwW14?autoplay=1rel=0" allowfullscreen></iframe>
                     </div>
                     <p>
-                        <a href="https://github.com/bnguye1/Fumble">
+                        <a href="https://github.com/bnguye1/Fumble" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
                             <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
                               </svg>Github link</a>
@@ -558,7 +649,7 @@
                 </div>
                 <div class="modal-body">
                     Trained model for classifying orthopedic patients into groups exhibiting Disk Hernia, Spondylolisthesis or no health conditions. Used principal component analysis to reduce feature complexity and preserve >95% variance for smoother model training. Used
-                    <a href="https://www.kaggle.com/datasets/uciml/biomechanical-features-of-orthopedic-patients">biomechanical Kaggle dataset</a>.
+                    <a href="https://www.kaggle.com/datasets/uciml/biomechanical-features-of-orthopedic-patients" target="_blank">biomechanical Kaggle dataset</a>.
                     <!--carousel-->
                     <div id="orthopedic-classification" class="carousel slide carousel-dark" data-bs-ride="carousel">
                         <ol class="carousel-indicators">
@@ -705,8 +796,8 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    Trained regression model to predict North America video game sales using data <a href="https://www.kaggle.com/datasets/rush4ratio/video-game-sales-with-ratings">from Kaggle</a> on video games since 1980. Methods utilized include Early
-                    stopping along with batch normalization and dropout to prevent overfitting.
+                    Trained regression model to predict North America video game sales using data <a href="https://www.kaggle.com/datasets/rush4ratio/video-game-sales-with-ratings" target="_blank">from Kaggle</a> on video games since 1980. Methods utilized
+                    include Early stopping along with batch normalization and dropout to prevent overfitting.
 
 
                     <!--carousel-->
@@ -766,7 +857,7 @@
                 </div>
                 <div class="modal-body">
                     Achieved 99% accuracy of categorization between 11 classes of intact/defective motor current components leveraging neural network from Keras library in Python. Methods used include RELU activation functions for feature matching and model training of over
-                    20 epochs. Project used sensorless drive <a href="https://archive.ics.uci.edu/ml/datasets/Dataset+for+Sensorless+Drive+Diagnosis#">Kaggle dataset</a>
+                    20 epochs. Project used sensorless drive <a href="https://archive.ics.uci.edu/ml/datasets/Dataset+for+Sensorless+Drive+Diagnosis#" target="_blank">Kaggle dataset</a>
 
 
                     <!--carousel-->
@@ -876,7 +967,7 @@
                         <iframe class="embed-responsive-item w-100 " height="300px" src="https://www.youtube.com/embed/RUzvdTdlEK4?autoplay=1rel=0" allowfullscreen></iframe>
                     </div>
                     <p>
-                        <a href="https://github.com/Shay2-umbc/CMSC433-Project-3---Pokemon">
+                        <a href="https://github.com/Shay2-umbc/CMSC433-Project-3---Pokemon" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
                         <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
                           </svg>Github link</a>
@@ -897,8 +988,8 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    Analyzed Stroke Prediction from <a href="https://archive.ics.uci.edu/ml/datasets/Dataset+for+Sensorless+Drive+Diagnosis#">Kaggle data set</a> of patients and their aspects (gender, age, diseases, smoking status) with Random Forest
-                    (Sci Kit learn library) and XGBoost. Compared both precision and balanced accuracy for both classifiers with confusion matrix. Model hyperparameters were optimized afterwards to maximize stroke prediction accuracy.
+                    Analyzed Stroke Prediction from <a href="https://archive.ics.uci.edu/ml/datasets/Dataset+for+Sensorless+Drive+Diagnosis#" target="_blank">Kaggle data set</a> of patients and their aspects (gender, age, diseases, smoking status) with
+                    Random Forest (Sci Kit learn library) and XGBoost. Compared both precision and balanced accuracy for both classifiers with confusion matrix. Model hyperparameters were optimized afterwards to maximize stroke prediction accuracy.
 
 
 
